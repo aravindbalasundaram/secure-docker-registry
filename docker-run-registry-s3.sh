@@ -24,7 +24,7 @@ docker run -d \
   -e REGISTRY_STORAGE_S3_SECRETKEY=${AWS_SECRET_KEY} \
   -e REGISTRY_STORAGE_S3_ROOTDIRECTORY=/registry \
   -e REGISTRY_AUTH=htpasswd \
-  -e REGISTRY_AUTH_HTPASSWD_REALM="Care2Joy Registry Realm" \
+  -e REGISTRY_AUTH_HTPASSWD_REALM="Registry Realm" \
   -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
   -l "traefik.enable=true" \
   -l "traefik.http.routers.registry.rule=Host(\`${REGISTRY_DOMAIN}\`)" \

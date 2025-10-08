@@ -22,7 +22,7 @@ docker run -d \
   -e REGISTRY_STORAGE_AZURE_CONTAINER=${AZURE_CONTAINER} \
   -e REGISTRY_STORAGE_AZURE_REALM=https://core.windows.net \
   -e REGISTRY_AUTH=htpasswd \
-  -e REGISTRY_AUTH_HTPASSWD_REALM="Care2Joy Registry Realm" \
+  -e REGISTRY_AUTH_HTPASSWD_REALM="Registry Realm" \
   -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
   -l "traefik.enable=true" \
   -l "traefik.http.routers.registry.rule=Host(\`${REGISTRY_DOMAIN}\`)" \
