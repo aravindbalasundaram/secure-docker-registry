@@ -40,6 +40,7 @@ All setups:
 ```bash
 chmod +x docker-run-registry-gcs.sh
 sudo ./docker-run-registry-gcs.sh
+```
 
 🟠 2️⃣ AWS S3
 Configuration
@@ -49,8 +50,10 @@ Bucket: docker-registry-bucket
 Region: ap-south-1
 
 Run
+```bash
 chmod +x docker-run-registry-s3.sh
 sudo ./docker-run-registry-s3.sh
+```
 
 🔵 3️⃣ Azure Blob Storage
 Configuration
@@ -60,9 +63,10 @@ Storage Account: registrystorage
 Container: registry
 
 Run
+```bash
 chmod +x docker-run-registry-azure.sh
 sudo ./docker-run-registry-azure.sh
-
+```
 
 🧪 Verify Registry
 docker login registry-uat.care2joy.com
